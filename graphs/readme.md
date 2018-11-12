@@ -12,4 +12,4 @@ if the graph is really dense then the run time complexity is even more high i.e.
 - Path graph is a tree with two nodes of vertex degree 1 and the rest n-2 nodes with the vertex degree 2. Thus, it is a graph that can be drawn such that the edges and vertices lie on the same straight line <sup>1</sup>
 
 **References**  
-1. [Pth Graph](http://mathworld.wolfram.com/PathGraph.html)
+1. [Path Graph](http://mathworld.wolfram.com/PathGraph.html)
