@@ -6,4 +6,4 @@
 > **Problem:** Given a set of *n* jobs and their processing times p<sub>1</sub> ,..., p<sub>n</sub> and integer *m* find an assignment of jobs to m identical machines so that the completion time is minimized.  
 >> **2-approximation algorithm steps**  
 >> 1. Order the jobs arbitrarily
->> 2. Schedule the jobs in such a way that the next job to be processed is fed to the machine with the lowest load.
+>> 2. Schedule the jobs in such a way that the next job to be processed is fed to the machine with the lowest load. 
