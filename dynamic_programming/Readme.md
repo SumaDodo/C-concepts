@@ -11,3 +11,7 @@ Instead of recalculating the distance recursively, we can instead choose the bes
 particular path.
 
 ---
+**Edit Distance**  
+1. It is the algorithm to measure how dissimilar two strings are by measuring the minimum number of operations required to convert one string to another.
+2. Used in automatic spelling correction.
+3. Levenshtein distance is equal to minimum number of operations required to transform a to b.
