@@ -4,7 +4,6 @@
 int main() {
 
     vector<int> vec;
-    int i;
 
     std::cout << "before"<<vec.size()<<endl;
 
