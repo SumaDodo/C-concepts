@@ -7,3 +7,6 @@
 >> **2-approximation algorithm steps**  
 >> 1. Order the jobs arbitrarily
 >> 2. Schedule the jobs in such a way that the next job to be processed is fed to the machine with the lowest load. 
+
+**%matplotlib inline**  
+- It is a python magic function [magic function : Magics are useful as convenient functions where python syntax is not the most natural one. or when one want to embed invalid python syntax in their workflow] With this command, the output of plotting commands is displayed inline within frontends like the jupyter notebook, directly below the code cell that produced it.
