@@ -15,3 +15,6 @@ particular path.
 1. It is the algorithm to measure how dissimilar two strings are by measuring the minimum number of operations required to convert one string to another.
 2. Used in automatic spelling correction.
 3. Levenshtein distance is equal to minimum number of operations required to transform a to b.
+
+---
+**Python: list.append vs list.extend**
