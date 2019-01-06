@@ -12,3 +12,4 @@ class Solution:
         return sum(sum1[-c-d] for c in C for d in D)
     
 #Solution learnt from @StefanPochmann on leetcode 
+
