@@ -10,3 +10,5 @@ class Solution:
         """
         sum1 = collections.Counter(a+b for a in A for b in B)
         return sum(sum1[-c-d] for c in C for d in D)
+    
+#Solution learnt from @StefanPochmann on leetcode 
