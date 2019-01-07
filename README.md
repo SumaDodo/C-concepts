@@ -10,3 +10,8 @@
 
 **%matplotlib inline**  
 - It is a python magic function [magic function : Magics are useful as convenient functions where python syntax is not the most natural one. or when one want to embed invalid python syntax in their workflow] With this command, the output of plotting commands is displayed inline within frontends like the jupyter notebook, directly below the code cell that produced it.
+---
+**Catalan Number**: In combinatorial mathematics, the Catalan numbers form a sequence of natural numbers that occur in various counting problems, often involving recursively-defined objects.<sup>1</sup>
+
+**References:**  
+1. Wikipedia
