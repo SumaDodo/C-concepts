@@ -7,6 +7,7 @@ shoes = Counter(map(int, input().split()))
 
 no_of_customers = int(input())
 total_money = 0
+
 for i in range(no_of_customers):
     (size, price) = map(int,input().split())
 
