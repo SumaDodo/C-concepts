@@ -1,6 +1,10 @@
 class Solution:    
+    
     def numberToWords(self, num: 'int') -> 'str':
-        if num==0:
+        self.count = 0
+        self.string = ""
+        
+        if num == 0:
             return "Zero"
         
         mapping = {
@@ -9,21 +13,21 @@ class Solution:
             2 : "Million ",
             3 : "Billion "
         }
-        decade = {
-                0 : "",
-                2 : "Twenty ",
-                3 : "Thirty ",
-                4 : "Forty ",
-                5 : "Fifty ",
-                6 : "Sixty ",
-                7 : "Seventy ",
-                8 : "Eighty ",
-                9 : "Ninety "
-            }
-
-
-        l20 = {
-              0 : "",
+        
+        tens = {
+            0 : "",
+            2 : "Twenty ",
+            3 : "Thirty ",
+            4 : "Forty ",
+            5 : "Fifty ",
+            6 : "Sixty ",
+            7 : "Seventy ",
+            8 : "Eighty ",
+            9 : "Ninety "
+        }
+        
+        tenth = {
+            0 : "",
             1 : "One ",
             2 : "Two ",
             3 : "Three ",
@@ -45,28 +49,25 @@ class Solution:
             19 : "Nineteen "
         }
         
-        self.res = ""
-        self.cnt = 0
         
         def helper(num):
             if num:
-                hund = int(num/100)
-                last2 = num%100
-
-                if last2>=20:
-                    # print(last2/10," ", last2%10)
-                    self.res = decade[int(last2/10)] + l20[last2%10] + mapping[self.cnt] + self.res
+                hundred = int(num/100)
+                remaining = num%100
+                if remaining>=20:
+                    self.string = tens[int(remaining/10)] + tenth[remaining%10] + mapping[self.count] + self.string
+                    # self.string = tens[remaining/10] + tenth[remaining%10] + mapping[self.count] + self.string
                 else:
-                    self.res = l20[last2] + mapping[self.cnt] + self.res
-
-                if hund:
-                    self.res = l20[hund]+"Hundred " + self.res
-            
-   
-        while num:
-            temp=num%1000
-            helper(temp)
-            num=int(num/1000)
-            self.cnt+=1
+                    self.string = tenth[remaining] + mapping[self.count] + self.string
         
-        return self.res[:-1]
+        
+                if hundred:
+                    self.string = tenth[hundred]+"Hundred "+self.string
+        
+        while(num):
+            temp = num%1000
+            helper(temp)
+            num = int(num/1000)
+            self.count += 1
+            
+        return self.string[:-1]
