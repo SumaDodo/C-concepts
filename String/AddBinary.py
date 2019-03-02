@@ -14,4 +14,3 @@ class Solution:
             output = sum_ + output
             
         return (c + output) if c == '1' else output
-        
