@@ -1,5 +1,5 @@
 '''
-# Sample code to perform I/O:
+#Sample code to perform I/O:
 
 name = input()               # Reading input from STDIN
 print('Hi, %s.' % name)      # Writing output to STDOUT
